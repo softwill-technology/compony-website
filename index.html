@@ -312,29 +312,7 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-            <form name="contact" method="POST" data-netlify="true">
-              <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-              </p>
-              <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-              </p>
-              <p>
-                <label>Your Role: <select name="role[]" multiple>
-                  <option value="leader">Leader</option>
-                  <option value="follower">Follower</option>
-                </select></label>
-              </p>
-              <p>
-                <label>Message: <textarea name="message"></textarea></label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-            </form>
-            
-
-            <!-- <form name="contact" method="POST" data-netlify="true" class="php-email-form">
+            <form name="contact" method="POST" data-netlify="true" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -348,8 +326,8 @@
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                 </div>
                 <div class="col-md-6 form-group mt-3">
-                  <select class="form-control form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                  <select name="role[]" class="form-control form-select" aria-label="Default select example">
+                    <option value="0" selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
@@ -365,7 +343,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <button type="submit">Send Message</button>
-            </form> -->
+            </form>
 
           </div>
 
